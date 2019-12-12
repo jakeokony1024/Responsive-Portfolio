@@ -153,7 +153,8 @@ nav a:first-child {
     float: left;
     overflow: auto;
     width: 274px;
-    margin: 20px 0 25px;    
+    margin: 20px 0 25px;
+    padding: 10px;    
 }
 
 .work:nth-child(even){
@@ -253,6 +254,7 @@ footer {
     .work {
         width: 100%;
     }
+    
     .auth-image {
         width: 100%;
         margin-bottom: 20px;
@@ -273,8 +275,40 @@ footer {
         width: 50%;
         margin-bottom: 10px;
     }
+    .work:nth-child(even) {
+        margin-right: 0;
+    }
+    .work:nth-child(odd) {
+        float: right;
+    }
+    .auth-image {
+        width: 50%;
+        
+    }
 }
 
 @media screen and (max-width: 640px){
+   header.container {
+       max-width: 100%;
+   }
+   
+    #masterhead {
+       margin-bottom: 20px;
+       position: static;  
+   }
+   
+   #logo {
+       width: 100%;    
+   }
+   nav {
+       width: 100%;
+       text-align: center;
+       margin: 15px 0;
+   }
+   nav a {
+       width: 30%;
+       padding-left: 0;
+       margin-left: 0;
+   }
 
 }
