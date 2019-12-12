@@ -239,9 +239,10 @@ footer {
     bottom: 0;
 }
 
-@media screen and (max-width: 980px) {
-
-
+@media screen and (max-width: 980px){
+    body {
+        width: 100%; 
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -249,5 +250,5 @@ footer {
 }
 
 @media screen and (max-width: 640px){
-    
+
 }
