@@ -250,13 +250,23 @@ footer {
     .main-section {
         max-width: 420px;
     }
+    .work {
+        width: 100%;
+    }
+    .auth-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 768px){
-    body {
-        margin: auto;
+    #main-container {
+        overflow: auto;
     }
+    .main-section, .sidebar {
+        max-width: 100%;
 
+    }
 }
 
 @media screen and (max-width: 640px){
