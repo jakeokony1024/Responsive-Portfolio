@@ -297,7 +297,7 @@ footer {
        position: static;  
    }
    
-   #logo {
+   #logo, .work, .auth-image {
        width: 100%;    
    }
    nav {
@@ -310,5 +310,9 @@ footer {
        padding-left: 0;
        margin-left: 0;
    }
+   #main-container {
+       padding-top: 20px;
+   }
+
 
 }
