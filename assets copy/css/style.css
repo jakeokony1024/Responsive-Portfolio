@@ -238,3 +238,8 @@ footer {
     text-align: center;
     bottom: 0;
 }
+
+@media screen and (max-width: 980px) {
+
+    
+}
