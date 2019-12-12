@@ -269,6 +269,10 @@ footer {
     .sidebar {
         margin-bottom: 40px;
     }
+    .work {
+        width: 50%;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 640px){
