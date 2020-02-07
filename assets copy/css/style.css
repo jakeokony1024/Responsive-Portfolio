@@ -31,7 +31,7 @@ p:last-child {
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
-    color: #4aaaa5;
+    color: rgba(10, 28, 160, 0.892);
 }
 
 h1 {
@@ -131,7 +131,7 @@ h3, .sidebar, h2 {
 #logo {
     width: 250px;
     height: 90px;
-    background-color: #4aaaa5;
+    background-color: rgba(10, 28, 160, 0.892);
     float: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -184,7 +184,7 @@ nav a:first-child {
 
 .work h2 {
     border-bottom: 0;
-    background-color: #4aaaa5;
+    background-color: rgba(10, 28, 160, 0.892);
     color: #fff;
     text-align: center;
     bottom: 20px;
@@ -226,8 +226,9 @@ nav a:first-child {
      height: 200px;
  }
 
- input[type=submit] {
-     background-color: #4aaaa5;
+ input[type=submit], 
+ input[type=reset] {
+     background-color: rgba(10, 27, 160, 0.892);
      color: #fff;
      border: 0 none;
      padding: 10px 30px;
@@ -237,9 +238,13 @@ nav a:first-child {
  }
 
  input[type=submit]:hover {
-     background-color: #3f8f8b;
+     background-color:  rgba(7, 20, 114, 0.892);
      color: white;
  }
+ input[type=reset]:hover {
+    background-color:  rgba(7, 20, 114, 0.892);
+    color: white;
+}
 
 
 /*footer*/
