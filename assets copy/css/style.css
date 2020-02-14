@@ -76,7 +76,7 @@ h2, h3 {
 
 .auth-image {
     width: 200px;
-    height: auto;
+    height: 200px;
     margin-top: 10px;
     float: left;
     margin-right: 25px;
@@ -167,13 +167,13 @@ nav a:first-child {
     float: left;
     overflow: auto;
     width: 274px;
-    
     margin: 20px 0 25px;
     padding: 10px;    
 }
 
 .work:nth-child(even){
     margin-right: 40px;
+    
 }
 
 .work img {
