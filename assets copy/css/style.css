@@ -76,7 +76,7 @@ h2, h3 {
 
 .auth-image {
     width: 200px;
-    height: 200px;
+    height: auto;
     margin-top: 10px;
     float: left;
     margin-right: 25px;
