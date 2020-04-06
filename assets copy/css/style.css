@@ -65,8 +65,6 @@ h2, h3 {
     margin: 0 0 40px 0;
     width: 100%;
     max-width: 650px;
-    height: 750px;
-    
     float: left;
     border: 1px solid #ddd;
     
@@ -166,27 +164,11 @@ nav a:first-child {
     border-left: 0 none;
 }
 
-/*Portfolio Pictures*/
+/*Portfolio Page*/
 
-.work {
-    float: left;
-    overflow: auto;
-    width: 274px;
-    margin: 20px 0 25px;
-    padding: 10px;    
+.row{
+    margin-top: 20px;
 }
-
-.work:nth-child(even){
-    margin-right: 40px;
-    
-}
-
-.work img {
-    width: 100%;
-    max-height: 100%;
-    border: 1px solid #666;  
-}
-
 .work h2 {
     border-bottom: 0;
     background-color: rgba(10, 28, 160, 0.892);
