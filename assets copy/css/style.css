@@ -23,7 +23,7 @@ body {
     clear: both;
 }
 
-h1, h2, h3, p {
+h1, h2, p {
     margin-bottom: 20px;
 }
 
@@ -41,7 +41,7 @@ h1 {
 
     font-size: 30px;
     line-height: 49px;
-    border-bottom: 3px solid #ddd;
+    border-bottom: 3px solid rgba(10, 28, 160, 0.892);
     padding-bottom: 20px;
 }
 
@@ -106,6 +106,10 @@ h3, .sidebar, h2 {
     border-bottom: 2px solid #eee;
     padding-bottom: 20px;
     line-height: 22px;
+}
+
+.row {
+    border-bottom: 2px solid rgba(10, 28, 160, 0.892);
 }
 
 .social {
@@ -241,7 +245,7 @@ footer {
     color: #fff;
     padding: 30px 0;
     clear: both;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid rgba(7, 20, 114, 0.892);
     color: #ccc;
     font-size: 12px;
     text-align: center;
