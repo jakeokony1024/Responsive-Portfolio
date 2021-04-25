@@ -2,32 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets copy/css/reset.css">
-    <link rel="stylesheet" href="assets copy/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets copy/css/reset.css">
+  <link rel="stylesheet" href="assets copy/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body id="landing-page">
-  <header id="masterhead">
-    <div class="container">
-        <a href="index.html" id="logo">Jacob Okony</a>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="portfolio copy.html">Portfolio </a>
-            <a href="contact copy.html">Contact</a>
-        </nav>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col">
+     <div class="container-fluid landing-container">
+      <div class="row landing-section">
+       <div class="col-md-3">
+        <span id="landing-name">Jacob Okony</span>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-8">
+         <span class="buttons">  
+           <button class="button" id="aboutButton">About Me</button>
+           <button class="button" id="portfolioButton">Portfolio</button>
+         </span>
+       </div>
+      </div>
+      </div>
+     </div>
     </div>
-</header>
-<div id="clear"></div>
-    <footer>
-        <div class="container">
-
-            &copy; 2019 Jacob Okony
-        </div>
-    </footer>
+   </div>
+  </div>
 </body>
+
+<div id = "aboutModal" class="modal">
+  <div class="modal-content">
+   <span class="aboutClose">&times;</span>
+   <div class="card" style="width: 18rem;">
+     <img src="./assets copy/images/profilePhoto.jpg" class="card-img-top" alt="profile-photo">
+     <div class="card-body">
+       <h5 class="card-title">About Me</h5>
+       <p class="card-text">
+         Full-stack web developer leveraging a management background in the service industry to contribute
+         strong problem solving and communication skills to an established development team.
+         <!-- Recently
+         earned a certificate in Full Stack Web Development from the University of Texas, Austin, with
+         skills in MongoDB, Express, React.js, and Node.js as well as responsive web design. 
+         Known for attention to detail and being very thorough, using these skills to resolve issues, 
+         as well as keeping teams focused and positive throughout a project to overcome obstacles and challenges. 
+         I recently used these skills to design an interactive full stack application that connects video gamers 
+         together based on similar game interests and playing types. Motivated by a desire to learn as much as 
+         possible about the software development field in order to build exciting and new experiences on the web. -->
+       </p>
+       <a href="index.html" class="btn btn-primary">Go somewhere</a>
+     </div>
+   </div>
+  </div>
+</div>
+
+
+<div id = "portfolioModal" class="modal">
+  <div class="modal-content">
+   <span class="portClose">&times;</span>
+   <div class="card" style="width: 18rem;">
+     <img src="./assets copy/images/workoutplaceholder1.jpeg" class="card-img-top" alt="port-photo">
+     <div class="card-body">
+       <h5 class="card-title port-title"></h5>
+       <p class="card-text port-description"></p>
+       <a href="index.html" class="btn btn-primary">Go somewhere</a>
+     </div>
+   </div>
+  </div>
+</div>
+
+<!-- <footer class="landing-footer">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col">
+    <a href="https://github.com/jakeokony1024" target="blank">
+     <img src="assets copy/images/github.png" class="social" alt="Github"></a>
+    <a href="https://www.linkedin.com/in/jacobOkony/" target="blank">
+     <img src="assets copy/images/linkedIn.png" class="social" alt="LinkedIn"></a>
+    <a href="https://drive.google.com/file/d/11kc8N2Vm2TI1hLjfyVenrI1dVRqwIW7P/view?usp=sharing" target="blank">
+     <img src="assets copy/images/word.jpeg" class="social" alt="resume"></a>
+   </div>
+   <div class="col">
+     &copy; 2019 Jacob Okony
+   </div>
+  </div>
+ </div>
+</footer> -->
+
+<script src="./assets copy/javascript/app.js"></script>
 </html>
