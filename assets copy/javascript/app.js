@@ -53,7 +53,7 @@ aboutButton.onclick = () => {
 
 portfolioButton.onclick = () => {
     portfolioModal.style.display = "block";
-    
+    // $("port-title").
 }
 
 aboutClose.onclick = () => {
