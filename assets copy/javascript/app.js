@@ -1,37 +1,77 @@
-//////////Portfolio Objects/////////////
+//////////Portfoo Objects/////////////
+const projectArray = [
 
-let projectObject = {
-    image: "",
-    title: "Corey's Active Fitness",
-    description: "A Personal Trainer's Website that allows users to store their personal data, schedule classes leave comments / feedback for the trainer.",
-    links: {
-        website: "https://coreysactivefitness.herokuapp.com/",
-        github: "https://github.com/jakeokony1024/Coreys-Active-Fitness",
-    }
-};
+    {
+        image: "",
+        title: "Corey's Active Fitness",
+        description: "A Personal Trainer's Website that allows users to store their personal data, schedule classes leave comments / feedback for the trainer.",
+        links: {
+            website: "https://coreysactivefitness.herokuapp.com/",
+            github: "https://github.com/jakeokony1024/Coreys-Active-Fitness",
+        },
+        // software: {
+        //     javaScript: "",
+        //     JQuery: "",
+        //     CSS : "",
+        //     HTML: "", 
+        //     Express: "", 
+        //     Handlebars: "",
+        //     NodeJS: "",
+        //     MySQL: "", 
+        //     Sequelize: "",
+        // },
+    // },
 
-// let projectObject = {
-//     image:,
-//     title: "",
-//     description: "",
-//     links: {
-//         website:
-//         github:
-//     },
-//     tech:
-// };
+    // {
+    //     image: "",
+    //     title: "",
+    //     description: "",
+    //     nks : {
+    //         website: "",
+    //         github: "",
+    //     },
+    //     software: [],
+    // },
 
-// let projectObject = {
-//     title: "",
-//     description: "",
-//     links: {
-//         website:
-//         github:
-//     },
-//     tech:
-// };
+    // {
+    //     image: "",
+    //     title: "",
+    //     description: "",
+    //     nks : {
+    //         website: "",
+    //         github: "",
+    //     },
+    //     software: [],
 
-$("#clearbtn").on("click", function(){
+    // },
+
+    // {
+    //     image: "",
+    //     title: "",
+    //     description: "",
+    //     nks : {
+    //         website: "",
+    //         github: "",
+    //     },
+    //     software: [],
+
+    // },
+
+    // {
+    //     image: "",
+    //     title: "",
+    //     description: "",
+    //     nks : {
+    //         website: "",
+    //         github: "",
+    //     },
+    //     software: [],
+
+    },
+];
+
+
+$("#clearbtn").on("cck", function(){
     $("#name").empty();
     $("#email").empty();
     $("#message").empty();
@@ -43,32 +83,32 @@ let aboutModal = document.getElementById("aboutModal");
 let aboutButton = document.getElementById("aboutButton");
 let aboutClose = document.getElementsByClassName("aboutClose")[0];
 let portClose = document.getElementsByClassName("portClose")[0];
-////////PORTFOLIO MODAL/////////////
-let portfolioModal = document.getElementById("portfolioModal");
-let portfolioButton = document.getElementById("portfolioButton");
+////////PORTFOO MODAL/////////////
+let portfooModal = document.getElementById("portfooModal");
+let portfooButton = document.getElementById("portfooButton");
 
-aboutButton.onclick = () => {
+aboutButton.oncck = () => {
     aboutModal.style.display = "block";
 }
 
-portfolioButton.onclick = () => {
-    portfolioModal.style.display = "block";
+portfooButton.oncck = () => {
+    portfooModal.style.display = "block";
     // $("port-title").
 }
 
-aboutClose.onclick = () => {
+aboutClose.oncck = () => {
     aboutModal.style.display = "none";
 };
 
-portClose.onclick = () => {
-    portfolioModal.style.display = "none";
+portClose.oncck = () => {
+    portfooModal.style.display = "none";
 };
 
-// window.onclick = e => {
+// window.oncck = e => {
 //     e.preventDefault();
 //     if(e.aboutButton, e.aboutClose) {
-//         portfolioModal.display.style = "none";
-//     }elseif(e.portfolioButton, e.portClose) {
+//         portfooModal.display.style = "none";
+//     }elseif(e.portfooButton, e.portClose) {
 //         aboutModal.display.style = "none";
 //     }
     
