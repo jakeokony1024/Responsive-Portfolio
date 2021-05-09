@@ -25,7 +25,7 @@ $(document).ready(function(){
         },
             {
                 id: "proj1",
-                image: "assets copy/images/workoutplaceholder1.jpeg",
+                image: "assets copy/images/javascriptlogo.PNG",
                 title: "Mikes Movie Search",
                 description: "This site is designed to help the client search for a movie or tv show and directs them to the streaming service that is offering that show or movie.",
                 links : {
@@ -125,8 +125,8 @@ $(document).ready(function(){
 
     $('body').on('click', 'button.proj-buttons', function(){
         if (this.id == 'proj0'){
-            
             projectModal.style.display = "block";
+
         } else if (this.id == 'proj1') {
             
         projectModal.style.display = "block";
@@ -145,12 +145,16 @@ $(document).ready(function(){
 
     let projectButtons = () => {
         //iterate through projectArray object, grab out titles, descriptions, images, links, software list//
-        projectArray.forEach((element, index) => {
+        projectArray.forEach((element) => {
             a = $("<button class='btn btn-primary proj-buttons' id='"+ element.id +"'>");
             b = $("<p class='card-text'>");
+            c = $("<img alt='image' class='card-img-top'>").attr("src", element.image);
             a.text(element.title);
             b.text(element.description);
-            $("#projectButtons").append(a,b);
+            // $("#image-target").append(c);
+            $("#projectButtons").append(a,b,c);
+
+            
         })
     }
 });
