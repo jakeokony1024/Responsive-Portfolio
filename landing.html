@@ -25,8 +25,8 @@
       <div class="row">
        <div class="col-md-8">
          <span class="buttons">  
-           <button class="button" id="aboutButton">About Me</button>
-           <button class="button" id="portfolioButton">Portfolio</button>
+           <button class="btn btn-primary" id="aboutButton">About Me</button>
+           <button class="btn btn-primary" id="portfolioButton">Portfolio</button>
          </span>
        </div>
       </div>
@@ -39,7 +39,7 @@
 
 <div id = "aboutModal" class="modal">
   <div class="modal-content">
-   <span id="aboutClose">&times;</span>
+   <button class="btn btn-primary" id="aboutClose">&times;</button>
    <div class="card" style="width: 18rem;">
      <img src="./assets copy/images/profilePhoto.jpg" class="card-img-top" alt="profile-photo">
      <div class="card-body">
@@ -65,17 +65,33 @@
 
 <div id = "portfolioModal" class="modal">
   <div class="modal-content">
-   <span id="portClose">&times;</span>
+   <button class="btn btn-secondary" id="portClose">&times;</button>
    <div class="card" style="width: 18rem;">
      <img src="./assets copy/images/workoutplaceholder1.jpeg" class="card-img-top" alt="port-photo">
      <div class="card-body">
        <h5 class="card-title port-title"></h5>
        <p class="card-text port-description"></p>
+       <div id="projectButtons"></div>
+     </div>
+   </div>
+  </div>
+</div>
+
+<div id = "projectModal" class="modal">
+  <div class="modal-content">
+   <button class="btn btn-secondary" id="projectClose">&times;</button>
+   <div class="card" style="width: 18rem;">
+     <img src="" class="card-img-top" id="project-image" alt="project-photo">
+     <div class="card-body">
+       <h5 class="card-title project-title" id="project-title"></h5>
+       <p class="card-text project-description" id="project-description"></p>
        <a href="index.html" class="btn btn-primary">Go somewhere</a>
      </div>
    </div>
   </div>
 </div>
+
+
 
 <!-- <footer class="landing-footer">
  <div class="container-fluid">
