@@ -3,6 +3,7 @@ $(document).ready(function(){
 
     const projectArray = [
         {
+            id: "proj0",
             image: "assets copy/images/workoutplaceholder1.jpeg",
             title: "Corey's Active Fitness",
             description: "A Personal Trainer's Website that allows users to store their personal data, schedule classes leave comments / feedback for the trainer.",
@@ -23,6 +24,7 @@ $(document).ready(function(){
             },
         },
             {
+                id: "proj1",
                 image: "assets copy/images/workoutplaceholder1.jpeg",
                 title: "Mikes Movie Search",
                 description: "This site is designed to help the client search for a movie or tv show and directs them to the streaming service that is offering that show or movie.",
@@ -39,6 +41,7 @@ $(document).ready(function(){
                 },
             },  
             {
+                id: "proj2",
                 image: "./assets copy/images/workoutplaceholder1.jpeg",
                 title: "Image Click Game",
                 description: "This site gives the user a table of images and directions to try and click on each different image no more than once. Once an image is clicked, the entire table is rearranged in a random order, and if the same image is clicked twice, the score is set back to zero. ",
@@ -55,6 +58,7 @@ $(document).ready(function(){
                 },   
             },  
             {
+                id: "proj3",
                 image: "./assets copy/images/workoutplaceholder1.jpeg",
                 title: "Friend Finder App",
                 description: "This site has the user go through a list of questions, and based on the answers gives them a 'friend' they are most compatible with.",
@@ -71,6 +75,7 @@ $(document).ready(function(){
                 },
             },
             {
+                id: "proj4",
                 image: "./assets copy/images/workoutplaceholder1.jpeg",
                 title: "Giphy Image Search",
                 description: "This site allows users to search for a list of GIF images populated from the Giphy API. Images can be clicked to show the animation, and clicked again to stop animation.",
@@ -93,14 +98,13 @@ $(document).ready(function(){
     ////Modal Button Function////
     jQuery(':button').click(function () {
         if (this.id == 'aboutButton') {
-            console.log(aboutModal);
             aboutModal.style.display = "block";
             portfolioModal.style.display = "none";
         }
         else if (this.id == 'portfolioButton') {
+            console.log(projectModal);
             portfolioModal.style.display = "block";
             aboutModal.style.display = "none";
-            let projectDiv = $("#projectButtons");
             if ($('#projectButtons').is(':empty')){
                 projectButtons();
             }else{
@@ -109,27 +113,48 @@ $(document).ready(function(){
         }
         else if (this.id == 'aboutClose') {
             aboutModal.style.display = "none";
+            projectModal.style.display = "block";
         }
         else if (this.id == 'portClose') {
             portfolioModal.style.display = "none";
-        }
-        else if(this.id == 'projectButton') {
-            projectModal.style.display = "block";
         }
         else if(this.id =='projectClose') {
             projectModal.style.display = "none";
         }
     }); 
 
+    $('body').on('click', 'button.proj-buttons', function(){
+        if (this.id == 'proj0'){
+            
+            projectModal.style.display = "block";
+        } else if (this.id == 'proj1') {
+            
+        projectModal.style.display = "block";
+        } else if (this.id == 'proj2') {
+            
+        projectModal.style.display = "block";
+        } else if (this.id == 'proj3') {
+            
+        projectModal.style.display = "block";
+        } else if (this.id == 'proj4') {
+            
+        projectModal.style.display = "block";
+        }
+    });
+    
+
     let projectButtons = () => {
         //iterate through projectArray object, grab out titles, descriptions, images, links, software list//
         projectArray.forEach((element, index) => {
-            a = $("<button class='btn btn-primary' id='"+ index +"'>");
+            a = $("<button class='btn btn-primary proj-buttons' id='"+ element.id +"'>");
+            b = $("<p class='card-text'>");
             a.text(element.title);
-            $("#projectButtons").append(a);
+            b.text(element.description);
+            $("#projectButtons").append(a,b);
         })
     }
 });
+
 
 
 
