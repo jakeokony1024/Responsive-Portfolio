@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     const projectArray = [
         {
-            image: "./assets copy/images/workoutplaceholder1.jpeg",
+            image: "assets copy/images/workoutplaceholder1.jpeg",
             title: "Corey's Active Fitness",
             description: "A Personal Trainer's Website that allows users to store their personal data, schedule classes leave comments / feedback for the trainer.",
             links: {
@@ -11,20 +11,20 @@ $(document).ready(function(){
                 github: "https://github.com/jakeokony1024/Coreys-Active-Fitness",
             },
             software: {
-                javaScript: "",
-                JQuery: "",
-                CSS : "",
-                HTML: "", 
-                Express: "", 
-                Handlebars: "",
-                NodeJS: "",
-                MySQL: "", 
-                Sequelize: "",
+                javaScript: "assets copy/images/javascriptlogo.PNG",
+                JQuery: "assets copy/images/jquerylogo.PNG",
+                CSS : "assets copy/images/csslogo.PNG",
+                HTML: "assets copy/images/htmllogo.PNG", 
+                Express: "assets copy/images/expresslogo.PNG", 
+                Handlebars: "assets copy/images/handlebarslogo.PNG",
+                NodeJS: "assets copy/images/nodejslogo.PNG",
+                MySQL: "assets copy/images/mysqllogo.PNG", 
+                Sequelize: "assets copy/images/sequelizelogo.PNG",
             },
         },
     
             {
-                image: "./assets copy/images/workoutplaceholder1.jpeg",
+                image: "assets copy/images/workoutplaceholder1.jpeg",
                 title: "Mikes Movie Search",
                 description: "This site is designed to help the client search for a movie or tv show and directs them to the streaming service that is offering that show or movie.",
                 links : {
@@ -32,10 +32,10 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/Mikes-Movie-Search",
                 },
                 software: {
-                    javaScript: "",
-                    JQuery: "",
-                    CSS : "",
-                    HTML: "", 
+                    javaScript: "assets copy/images/javascriptlogo.PNG",
+                    JQuery: "assets copy/images/jquerylogo.PNG",
+                    CSS : "assets copy/images/csslogo.PNG",
+                    HTML: "assets copy/images/htmllogo.PNG", 
                     AJAX: ""
                 },
             },
@@ -49,11 +49,11 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/clickgame-2",
                 },
                 software: {
-                    javaScript: "",
-                    JQuery: "",
-                    CSS : "",
-                    HTML: "", 
-                    React: ""
+                    javaScript: "assets copy/images/javascriptlogo.PNG",
+                    JQuery: "assets copy/images/jquerylogo.PNG",
+                    CSS : "assets copy/images/csslogo.PNG",
+                    HTML: "assets copy/images/htmllogo.PNG", 
+                    React: "assets copy/images/reactlogo.PNG"
                 },
     
             },
@@ -67,12 +67,11 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/FriendFinder",
                 },
                 software: {
-                    JavaScript: "",
-                    Express: "",
-                    Path: "",
-                    CSS: "", 
-                    HTML: "",
-                    NodeJs: ""
+                    javaScript: "assets copy/images/javascriptlogo.PNG",
+                    Express: "assets copy/images/expresslogo.PNG",
+                    CSS : "assets copy/images/csslogo.PNG",
+                    HTML: "assets copy/images/htmllogo.PNG", 
+                    NodeJS: "assets copy/images/nodejslogo.PNG",
                 },
     
             },
@@ -86,11 +85,10 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/Giphy-App",
                 },
                 software: {
-                    javaScript: "",
-                    JQuery: "",
-                    CSS : "",
-                    HTML: "", 
-                    AJAX: ""
+                    javaScript: "assets copy/images/javascriptlogo.PNG",
+                    JQuery: "assets copy/images/jquerylogo.PNG",
+                    CSS : "assets copy/images/csslogo.PNG",
+                    HTML: "assets copy/images/htmllogo.PNG", 
                 },
     
         },
