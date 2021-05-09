@@ -22,7 +22,6 @@ $(document).ready(function(){
                 Sequelize: "assets copy/images/sequelizelogo.PNG",
             },
         },
-    
             {
                 image: "assets copy/images/workoutplaceholder1.jpeg",
                 title: "Mikes Movie Search",
@@ -38,8 +37,7 @@ $(document).ready(function(){
                     HTML: "assets copy/images/htmllogo.PNG", 
                     AJAX: ""
                 },
-            },
-    
+            },  
             {
                 image: "./assets copy/images/workoutplaceholder1.jpeg",
                 title: "Image Click Game",
@@ -54,10 +52,8 @@ $(document).ready(function(){
                     CSS : "assets copy/images/csslogo.PNG",
                     HTML: "assets copy/images/htmllogo.PNG", 
                     React: "assets copy/images/reactlogo.PNG"
-                },
-    
-            },
-    
+                },   
+            },  
             {
                 image: "./assets copy/images/workoutplaceholder1.jpeg",
                 title: "Friend Finder App",
@@ -73,9 +69,7 @@ $(document).ready(function(){
                     HTML: "assets copy/images/htmllogo.PNG", 
                     NodeJS: "assets copy/images/nodejslogo.PNG",
                 },
-    
             },
-    
             {
                 image: "./assets copy/images/workoutplaceholder1.jpeg",
                 title: "Giphy Image Search",
@@ -90,7 +84,6 @@ $(document).ready(function(){
                     CSS : "assets copy/images/csslogo.PNG",
                     HTML: "assets copy/images/htmllogo.PNG", 
                 },
-    
         },
 ];
     let projectTitle;
@@ -130,14 +123,12 @@ $(document).ready(function(){
 
     let projectButtons = () => {
         //iterate through projectArray object, grab out titles, descriptions, images, links, software list//
-        projectArray.forEach((element, index, array) => {
-            a = $("<button class='btn btn-primary'>");
-            console.log(element.title);
+        projectArray.forEach((element, index) => {
+            a = $("<button class='btn btn-primary' id='"+ index +"'>");
             a.text(element.title);
             $("#projectButtons").append(a);
         })
     }
-    
 });
 
 

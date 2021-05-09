@@ -30,7 +30,13 @@
   width: 50%;
 
 }
-
+#projectButtons {
+  display: flex;
+  flex-direction: column;
+}
+.btn-primary {
+  margin: 5px 5px;
+}
 .close {
   color: #aaa;
   float: right;
