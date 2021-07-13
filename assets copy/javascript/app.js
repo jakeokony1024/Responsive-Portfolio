@@ -133,7 +133,8 @@ $(document).ready(function(){
             projectLinkWS = projectArray[0].links.website;
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);  
-            
+            $("#website").attr("href", projectLinkWS);
+            $("#github").attr("href", projectLinkGH);
 
         } else if (this.id == 'proj1') {
             projectModal.style.display = "block";
@@ -143,8 +144,9 @@ $(document).ready(function(){
             projectLinkWS = projectArray[1].links.website;
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);  
-            
-            
+            $("#website").attr("href", projectLinkWS);
+            $("#github").attr("href", projectLinkGH);
+
         } else if (this.id == 'proj2') {
             projectModal.style.display = "block";
             projectTitle = projectArray[2].title;
@@ -153,7 +155,9 @@ $(document).ready(function(){
             projectLinkWS = projectArray[2].links.website;
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);
-        
+            $("#website").attr("href", projectLinkWS);
+            $("#github").attr("href", projectLinkGH);
+
         } else if (this.id == 'proj3') {
             projectModal.style.display = "block";
             projectTitle = projectArray[3].title;
@@ -162,7 +166,9 @@ $(document).ready(function(){
             projectLinkWS = projectArray[3].links.website;
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);
-        
+            $("#website").attr("href", projectLinkWS);
+            $("#github").attr("href", projectLinkGH);
+
         } else if (this.id == 'proj4') {
             projectModal.style.display = "block";
             projectTitle = projectArray[4].title;
@@ -171,7 +177,8 @@ $(document).ready(function(){
             projectLinkWS = projectArray[4].links.website;
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);
-        
+            $("#website").attr("href", projectLinkWS);
+            $("#github").attr("href", projectLinkGH);
         } 
     });
     

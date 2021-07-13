@@ -6,48 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets copy/css/reset.css">
   <link rel="stylesheet" href="assets copy/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body id="landing-page">
-  <div class="container-fluid">
-   <div class="row">
-    <div class="col">
-     <div class="container-fluid landing-container">
-      <div class="row landing-section">
-       <div class="col-md-3">
-        <span id="landing-name">Jacob Okony</span>
-       </div>
+  <div class="body">
+    <div id="background">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="container-fluid landing-container">
+              <div class="row landing-section">
+                <div class="col-md-12">
+                  <span id="landing-name">Jacob Okony</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <span class="buttons">
+                    <button class="btn btn-primary" id="aboutButton">About Me</button>
+                    <button class="btn btn-primary" id="portfolioButton">Portfolio</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-       <div class="col-md-8">
-         <span class="buttons">  
-           <button class="btn btn-primary" id="aboutButton">About Me</button>
-           <button class="btn btn-primary" id="portfolioButton">Portfolio</button>
-         </span>
-       </div>
-      </div>
-      </div>
-     </div>
-    </div>
-   </div>
   </div>
+  </div>
+
+  </div>
+
 </body>
 
-<div id = "aboutModal" class="modal">
+<div id="aboutModal" class="modal">
   <div class="modal-content">
-   <button class="btn btn-primary" id="aboutClose">&times;</button>
-   <div class="card" style="width: 18rem;">
-     <img src="./assets copy/images/profilePhoto.jpg" class="card-img-top" alt="profile-photo">
-     <div class="card-body">
-       <h5 class="card-title">About Me</h5>
-       <p class="card-text">
-         Full-stack web developer leveraging a management background in the service industry to contribute
-         strong problem solving and communication skills to an established development team.
-         <!-- Recently
+    <button class="btn btn-primary" id="aboutClose">&times;</button>
+    <div class="card" style="width: 18rem;">
+      <img src="./assets copy/images/profilePhoto.jpg" class="card-img-top" alt="profile-photo">
+      <div class="card-body">
+        <h5 class="card-title">About Me</h5>
+        <p class="card-text">
+          Full-stack web developer leveraging a management background in the service industry to contribute
+          strong problem solving and communication skills to an established development team.
+          <!-- Recently
          earned a certificate in Full Stack Web Development from the University of Texas, Austin, with
          skills in MongoDB, Express, React.js, and Node.js as well as responsive web design. 
          Known for attention to detail and being very thorough, using these skills to resolve issues, 
@@ -55,38 +61,40 @@
          I recently used these skills to design an interactive full stack application that connects video gamers 
          together based on similar game interests and playing types. Motivated by a desire to learn as much as 
          possible about the software development field in order to build exciting and new experiences on the web. -->
-       </p>
-       <a href="index.html" class="btn btn-primary">Go somewhere</a>
-     </div>
-   </div>
+        </p>
+        <a href="index.html" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
   </div>
 </div>
 
 
-<div id = "portfolioModal" class="modal">
+<div id="portfolioModal" class="modal">
   <div class="modal-content">
-   <button class="btn btn-secondary" id="portClose">&times;</button>
-   <div class="card" style="width: 18rem;" id="image-target">
-     <div class="card-body">
-       <h5 class="card-title port-title"></h5>
-       <p class="card-text port-description"></p>
-       <div id="projectButtons"></div>
-     </div>
-   </div>
+    <button class="btn btn-secondary" id="portClose">&times;</button>
+    <div class="card" style="width: 18rem;" id="image-target">
+      <div class="card-body">
+        <h5 class="card-title port-title"></h5>
+        <p class="card-text port-description"></p>
+        <div id="projectButtons"></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div id = "projectModal" class="modal">
+<div id="projectModal" class="modal">
   <div class="modal-content">
-   <button class="btn btn-secondary" id="projectClose">&times;</button>
-   <div class="hero-unit" style="width: 18rem;">
-     <img src="" class="card-img-top" id="project-image" alt="project-photo">
-     <div class="card-body">
-       <h5 class="card-title project-title" id="project-title"></h5>
-       <a href="" class="card-text project-description" id="project-description"></a>
-       <a href="index.html" class="btn btn-primary">Go somewhere</a>
-     </div>
-   </div>
+    <button class="btn btn-secondary" id="projectClose">&times;</button>
+    <div class="hero-unit" style="width: 18rem;">
+      <img src="" class="card-img-top" id="project-image" alt="project-photo">
+      <div class="card-body">
+        <h5 class="card-title project-title" id="project-title"></h5>
+        <a href="" class="card-text project-description" id="project-description"></a>
+        <a href="" class="btn btn-primary" target="_blank" id="website">View Website</a>
+        <a href="" class="btn btn-primary" target="_blank" id="github">GitHub Repo</a>
+        
+      </div>
+    </div>
   </div>
 </div>
 
@@ -111,4 +119,5 @@
 </footer> -->
 
 <script src="./assets copy/javascript/app.js"></script>
+
 </html>
