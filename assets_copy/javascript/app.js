@@ -1,4 +1,4 @@
-//////////Portfoo Objects/////////////
+//////////Portfolio Objects/////////////
 $(document).ready(function(){
     
     const projectArray = [
@@ -123,7 +123,7 @@ $(document).ready(function(){
             projectModal.style.display = "none";
         }
     }); 
-
+//Project Details Display //
     $('body').on('click', 'button.proj-buttons', function(){
         if (this.id == 'proj0'){
             projectModal.style.display = "block";
@@ -131,6 +131,9 @@ $(document).ready(function(){
             projectImage = projectArray[0].image;
             projectLinkGH = projectArray[0].links.github;
             projectLinkWS = projectArray[0].links.website;
+            softWareImgArray = projectArray[0].software;
+            console.log('line 125', softWareImgArray);
+            $("#logos-container").html(softWareImgArray);
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);  
             $("#website").attr("href", projectLinkWS);
@@ -185,7 +188,6 @@ $(document).ready(function(){
     let projectCards = () => {
         // iterate through projectArray object, grab out titles, descriptions, images//
         projectArray.forEach((element, index) => {
-            
             a = $("<button class='btn btn-primary proj-buttons' id='"+ element.id +"'>");
             b = $("<p class='card-text'>");
             c = $("<img alt='image' class='card-img-top'>").attr("src", element.image);
@@ -196,12 +198,6 @@ $(document).ready(function(){
 
             
         })
-    }
-
-    let project0 = () => {
-        
-
-        $()
     }
 
 });
