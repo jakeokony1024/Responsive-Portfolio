@@ -4,7 +4,7 @@ $(document).ready(function(){
     const projectArray = [
         {
             id: "proj0",
-            image: "assets copy/images/jquerylogo.PNG",
+            image: "assets_copy/images/jquerylogo.PNG",
             title: "Corey's Active Fitness",
             description: "A Personal Trainer's Website that allows users to store their personal data, schedule classes leave comments / feedback for the trainer.",
             links: {
@@ -12,20 +12,20 @@ $(document).ready(function(){
                 github: "https://github.com/jakeokony1024/Coreys-Active-Fitness",
             },
             software: {
-                javaScript: "assets copy/images/javascriptlogo.PNG",
-                JQuery: "assets copy/images/jquerylogo.PNG",
-                CSS : "assets copy/images/csslogo.PNG",
-                HTML: "assets copy/images/htmllogo.PNG", 
-                Express: "assets copy/images/expresslogo.PNG", 
-                Handlebars: "assets copy/images/handlebarslogo.PNG",
-                NodeJS: "assets copy/images/nodejslogo.PNG",
-                MySQL: "assets copy/images/mysqllogo.PNG", 
-                Sequelize: "assets copy/images/sequelizelogo.PNG",
+                javaScript: "assets_copy/images/javascriptlogo.PNG",
+                JQuery: "assets_copy/images/jquerylogo.PNG",
+                CSS : "assets_copy/images/csslogo.PNG",
+                HTML: "assets_copy/images/htmllogo.PNG", 
+                Express: "assets_copy/images/expresslogo.PNG", 
+                Handlebars: "assets_copy/images/handlebarslogo.PNG",
+                NodeJS: "assets_copy/images/nodejslogo.PNG",
+                MySQL: "assets_copy/images/mysqllogo.PNG", 
+                Sequelize: "assets_copy/images/sequelizelogo.PNG",
             },
         },
             {
                 id: "proj1",
-                image: "assets copy/images/htmllogo.PNG",
+                image: "assets_copy/images/htmllogo.PNG",
                 title: "Mikes Movie Search",
                 description: "This site is designed to help the client search for a movie or tv show and directs them to the streaming service that is offering that show or movie.",
                 links : {
@@ -33,16 +33,15 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/Mikes-Movie-Search",
                 },
                 software: {
-                    javaScript: "assets copy/images/javascriptlogo.PNG",
-                    JQuery: "assets copy/images/jquerylogo.PNG",
-                    CSS : "assets copy/images/csslogo.PNG",
-                    HTML: "assets copy/images/htmllogo.PNG", 
-                    AJAX: ""
+                    javaScript: "assets_copy/images/javascriptlogo.PNG",
+                    JQuery: "assets_copy/images/jquerylogo.PNG",
+                    CSS : "assets_copy/images/csslogo.PNG",
+                    HTML: "assets_copy/images/htmllogo.PNG", 
                 },
             },  
             {
                 id: "proj2",
-                image: "./assets copy/images/csslogo.PNG",
+                image: "./assets_copy/images/csslogo.PNG",
                 title: "Image Click Game",
                 description: "This site gives the user a table of images and directions to try and click on each different image no more than once. Once an image is clicked, the entire table is rearranged in a random order, and if the same image is clicked twice, the score is set back to zero. ",
                 links : {
@@ -50,16 +49,16 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/clickgame-2",
                 },
                 software: {
-                    javaScript: "assets copy/images/javascriptlogo.PNG",
-                    JQuery: "assets copy/images/jquerylogo.PNG",
-                    CSS : "assets copy/images/csslogo.PNG",
-                    HTML: "assets copy/images/htmllogo.PNG", 
-                    React: "assets copy/images/reactlogo.PNG"
+                    javaScript: "assets_copy/images/javascriptlogo.PNG",
+                    JQuery: "assets_copy/images/jquerylogo.PNG",
+                    CSS : "assets_copy/images/csslogo.PNG",
+                    HTML: "assets_copy/images/htmllogo.PNG", 
+                    React: "assets_copy/images/reactlogo.PNG"
                 },   
             },  
             {
                 id: "proj3",
-                image: "./assets copy/images/reactlogo.PNG",
+                image: "./assets_copy/images/reactlogo.PNG",
                 title: "Friend Finder App",
                 description: "This site has the user go through a list of questions, and based on the answers gives them a 'friend' they are most compatible with.",
                 links : {
@@ -67,16 +66,16 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/FriendFinder",
                 },
                 software: {
-                    javaScript: "assets copy/images/javascriptlogo.PNG",
-                    Express: "assets copy/images/expresslogo.PNG",
-                    CSS : "assets copy/images/csslogo.PNG",
-                    HTML: "assets copy/images/htmllogo.PNG", 
-                    NodeJS: "assets copy/images/nodejslogo.PNG",
+                    javaScript: "assets_copy/images/javascriptlogo.PNG",
+                    Express: "assets_copy/images/expresslogo.PNG",
+                    CSS : "assets_copy/images/csslogo.PNG",
+                    HTML: "assets_copy/images/htmllogo.PNG", 
+                    NodeJS: "assets_copy/images/nodejslogo.PNG",
                 },
             },
             {
                 id: "proj4",
-                image: "./assets copy/images/nodejslogo.PNG",
+                image: "./assets_copy/images/nodejslogo.PNG",
                 title: "Giphy Image Search",
                 description: "This site allows users to search for a list of GIF images populated from the Giphy API. Images can be clicked to show the animation, and clicked again to stop animation.",
                 links : {
@@ -84,10 +83,10 @@ $(document).ready(function(){
                     github: "https://github.com/jakeokony1024/Giphy-App",
                 },
                 software: {
-                    javaScript: "assets copy/images/javascriptlogo.PNG",
-                    JQuery: "assets copy/images/jquerylogo.PNG",
-                    CSS : "assets copy/images/csslogo.PNG",
-                    HTML: "assets copy/images/htmllogo.PNG", 
+                    javaScript: "assets_copy/images/javascriptlogo.PNG",
+                    JQuery: "assets_copy/images/jquerylogo.PNG",
+                    CSS : "assets_copy/images/csslogo.PNG",
+                    HTML: "assets_copy/images/htmllogo.PNG", 
                 },
         },
 ];
@@ -122,7 +121,19 @@ $(document).ready(function(){
         else if(this.id =='projectClose') {
             projectModal.style.display = "none";
         }
-    }); 
+    });
+    
+    // //Software Image Slideshow function//
+    // let imageIndex = 0;
+    // let currentImage = $("#current-image");
+    // changeImage = () => {
+    //     currentImage.attr("src", softWareImgArray[imageIndex]);
+    //     imageIndex++;
+    //     if(imageIndex > 9){
+    //         imageIndex = 0;
+    //     }
+    // }
+
 //Project Details Display //
     $('body').on('click', 'button.proj-buttons', function(){
         if (this.id == 'proj0'){
@@ -132,12 +143,33 @@ $(document).ready(function(){
             projectLinkGH = projectArray[0].links.github;
             projectLinkWS = projectArray[0].links.website;
             softWareImgArray = projectArray[0].software;
-            console.log('line 125', softWareImgArray);
+            console.log('line 125', softWareImgArray.CSS);
             $("#logos-container").html(softWareImgArray);
             $("#project-title").text(projectTitle);
             $("#project-image").attr("src", projectImage);  
             $("#website").attr("href", projectLinkWS);
             $("#github").attr("href", projectLinkGH);
+            imageContainer = $("#image-container");
+            image = $("<img class ='software-image' src=''>");
+            image.attr('src', softWareImgArray.javaScript);
+            image1 = $("<img class ='software-image' src=''>");
+            image1.attr('src', softWareImgArray.JQuery);
+            image2 = $("<img class ='software-image' src=''>");
+            image2.attr('src', softWareImgArray.CSS);
+            image3 = $("<img class ='software-image' src=''>");
+            image3.attr('src', softWareImgArray.HTML);
+            image4 = $("<img class ='software-image' src=''>");
+            image4.attr('src', softWareImgArray.Express);
+            image5 = $("<img class ='software-image' src=''>");
+            image5.attr('src', softWareImgArray.Handlebars);
+            image6 = $("<img class ='software-image' src=''>");
+            image6.attr('src', softWareImgArray.NodeJS);
+            image7 = $("<img class ='software-image' src=''>");
+            image7.attr('src', softWareImgArray.MySQL);
+            image8 = $("<img class ='software-image' src=''>");
+            image8.attr('src', softWareImgArray.Sequelize);
+
+            imageContainer.append(image, image1, image2, image3, image4, image5, image6, image7, image8);
 
         } else if (this.id == 'proj1') {
             projectModal.style.display = "block";
@@ -149,6 +181,18 @@ $(document).ready(function(){
             $("#project-image").attr("src", projectImage);  
             $("#website").attr("href", projectLinkWS);
             $("#github").attr("href", projectLinkGH);
+            imageContainer = $("#image-container");
+            imageContainer.empty();
+            image = $("<img class ='software-image' src=''>");
+            image.attr('src', softWareImgArray.javaScript);
+            image1 = $("<img class ='software-image' src=''>");
+            image1.attr('src', softWareImgArray.JQuery);
+            image2 = $("<img class ='software-image' src=''>");
+            image2.attr('src', softWareImgArray.CSS);
+            image3 = $("<img class ='software-image' src=''>");
+            image3.attr('src', softWareImgArray.HTML);
+            imageContainer.append(image, image1, image2, image3);
+
 
         } else if (this.id == 'proj2') {
             projectModal.style.display = "block";
@@ -160,6 +204,21 @@ $(document).ready(function(){
             $("#project-image").attr("src", projectImage);
             $("#website").attr("href", projectLinkWS);
             $("#github").attr("href", projectLinkGH);
+            imageContainer = $("#image-container");
+            imageContainer.empty();
+            image = $("<img class ='software-image' src=''>");
+            image.attr('src', softWareImgArray.javaScript);
+            image1 = $("<img class ='software-image' src=''>");
+            image1.attr('src', softWareImgArray.JQuery);
+            image2 = $("<img class ='software-image' src=''>");
+            image2.attr('src', softWareImgArray.CSS);
+            image3 = $("<img class ='software-image' src=''>");
+            image3.attr('src', softWareImgArray.HTML);
+            image4 = $("<img class ='software-image' src=''>");
+            image4.attr('src', softWareImgArray.React);
+        
+            imageContainer.append(image, image1, image2, image3, image4);
+
 
         } else if (this.id == 'proj3') {
             projectModal.style.display = "block";
@@ -171,6 +230,19 @@ $(document).ready(function(){
             $("#project-image").attr("src", projectImage);
             $("#website").attr("href", projectLinkWS);
             $("#github").attr("href", projectLinkGH);
+            imageContainer = $("#image-container");
+            imageContainer.empty();
+            image = $("<img class ='software-image' src=''>");
+            image.attr('src', softWareImgArray.javaScript);
+            image1 = $("<img class ='software-image' src=''>");
+            image1.attr('src', softWareImgArray.Express);
+            image2 = $("<img class ='software-image' src=''>");
+            image2.attr('src', softWareImgArray.CSS);
+            image3 = $("<img class ='software-image' src=''>");
+            image3.attr('src', softWareImgArray.HTML);
+            image4 = $("<img class ='software-image' src=''>");
+            image4.attr('src', softWareImgArray.NodeJS);
+            imageContainer.append(image, image1, image2, image3, image4);
 
         } else if (this.id == 'proj4') {
             projectModal.style.display = "block";
@@ -182,6 +254,19 @@ $(document).ready(function(){
             $("#project-image").attr("src", projectImage);
             $("#website").attr("href", projectLinkWS);
             $("#github").attr("href", projectLinkGH);
+            imageContainer = $("#image-container");
+            imageContainer.empty();
+            image = $("<img class ='software-image' src=''>");
+            image.attr('src', softWareImgArray.javaScript);
+            image1 = $("<img class ='software-image' src=''>");
+            image1.attr('src', softWareImgArray.JQuery);
+            image2 = $("<img class ='software-image' src=''>");
+            image2.attr('src', softWareImgArray.CSS);
+            image3 = $("<img class ='software-image' src=''>");
+            image3.attr('src', softWareImgArray.HTML);
+
+            imageContainer.append(image, image1, image2, image3);
+
         } 
     });
     

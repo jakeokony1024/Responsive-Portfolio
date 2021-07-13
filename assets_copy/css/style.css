@@ -55,6 +55,13 @@
   color: black;
   text-align: center;
 }
+#image-container {
+  display: flex;
+}
+.software-image {
+  height: 40px;
+  width: 40px;
+}
 /* End Modal Content*/
 body {
   background-image: url("../images/background.png");
