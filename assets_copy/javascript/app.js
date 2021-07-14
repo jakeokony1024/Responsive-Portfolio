@@ -121,6 +121,11 @@ $(document).ready(function(){
         else if(this.id =='projectClose') {
             projectModal.style.display = "none";
         }
+        else if(target = window) {
+            portfolioModal.style.display = "none";
+            projectModal.style.display = "none";
+            aboutModal.style.display = "none";
+        }
     });
     
     // //Software Image Slideshow function//
