@@ -275,7 +275,7 @@ $(document).ready(function(){
         } 
     });
     
-    let projectCards = () => {
+    const projectCards = () => {
         // iterate through projectArray object, grab out titles, descriptions, images//
         projectArray.forEach((element, index) => {
             a = $("<button class='btn btn-primary proj-buttons' id='"+ element.id +"'>");
@@ -285,11 +285,8 @@ $(document).ready(function(){
             b.text(element.description);
             $("#image-target").append(c);
             $("#projectButtons").append(c,a,b);
-
-            
         })
     }
-
 });
 
 
