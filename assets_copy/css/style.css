@@ -172,6 +172,16 @@ h1 {
   padding-bottom: 20px;
 }
 
+.title-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.blue-underline {
+  border-top: 3px solid rgba(10, 28, 160, 0.892);
+  padding: 0 0 20px 0;
+}
 h2,
 h3 {
   font-size: 22px;
@@ -404,13 +414,24 @@ footer {
 @media screen and (max-width: 768px) {
   #main-container {
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .main-section,
   .sidebar {
     max-width: 100%;
+
   }
   .sidebar {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+  }
+
+  .link-cont {
+    justify-content: space-between;
   }
   .work {
     width: 50%;
